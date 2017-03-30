@@ -3,21 +3,85 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page Two</ion-title>
+    <ion-title>Cadastro</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <h2>Cadastro de doença</h2>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
+    <ion-item>
+      <ion-label>Quando começou?</ion-label>
+      <ion-select placeholder="Dia" >
+        <ion-option>1</ion-option>
+        <ion-option>2</ion-option>
+        <ion-option>3</ion-option>
+        <ion-option>4</ion-option>
+        <ion-option>5</ion-option>
+        <ion-option checked="true">6</ion-option>
+        <ion-option>7</ion-option>
+        <ion-option>8</ion-option>
+        <ion-option>9</ion-option>
+        <ion-option>10</ion-option>
+        <ion-option>11</ion-option>
+        <ion-option>12</ion-option>
+        <ion-option>12</ion-option>
+        <ion-option>13</ion-option>
+        <ion-option>14</ion-option>
+        <ion-option>15</ion-option>
+        <ion-option>16</ion-option>
+        <ion-option>17</ion-option>
+        <ion-option>18</ion-option>
+        <ion-option>19</ion-option>
+        <ion-option>20</ion-option>
+        <ion-option>21</ion-option>
+        <ion-option>22</ion-option>
+        <ion-option>23</ion-option>
+        <ion-option>24</ion-option>
+        <ion-option>25</ion-option>
+        <ion-option>26</ion-option>
+        <ion-option>27</ion-option>
+        <ion-option>28</ion-option>
+        <ion-option>29</ion-option>
+        <ion-option>30</ion-option>
+      </ion-select>
+      <ion-select placeholder="Mês">
+        <ion-option value="01">Janeiro</ion-option>
+        <ion-option value="02">Fevereiro</ion-option>
+        <ion-option value="03">Março</ion-option>
+        <ion-option value="04">Abril</ion-option>
+        <ion-option value="05">Maio</ion-option>
+        <ion-option value="06">Junho</ion-option>
+        <ion-option value="07">Julho</ion-option>
+        <ion-option value="08">Agosto</ion-option>
+        <ion-option value="09">Setembro</ion-option>
+        <ion-option value="10">Outubro</ion-option>
+        <ion-option value="11">Novembro</ion-option>
+        <ion-option value="12" checked="true">Dezembro</ion-option>
+      </ion-select>
+    </ion-item>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <ion-label>Quais os sintomas que esta sentindo?</ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-label>Febre</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Vomito</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Diarréia</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Suor excessivo</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tontura</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+    </ion-list>
 </ion-content>
